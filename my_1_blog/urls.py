@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin # type: ignore
 from django.urls import path, include # type: ignore
 from hello_world_app import views as index_view
+from about import views as about_views
 
 urlpatterns = [
-    path('', index_view.index, name="index"),
+    path('about/', about_views.about_me, name="about"),
+    path('hello/', index_view.index, name="index"),
     path('admin/', admin.site.urls),
 ]
