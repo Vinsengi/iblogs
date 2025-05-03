@@ -19,6 +19,6 @@ from django.urls import path, include # type: ignore
 from hello_world_app import views as index_view
 
 urlpatterns = [
-    path('', index_view.index, nmae="index"),
+    path('', index_view.index, name="index"),
     path('admin/', admin.site.urls),
 ]
